@@ -1,0 +1,505 @@
+{
+  "model": {
+    "vocabSize": 13,
+    "dModel": 64,
+    "heads": 4,
+    "layers": 2,
+    "dFF": 128,
+    "maxLen": 10
+  },
+  "parameters": [
+    {
+      "name": "embed.table",
+      "shape": [
+        13,
+        64
+      ],
+      "offset": 0
+    },
+    {
+      "name": "encoder.layers.0.selfAttn.Wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 832
+    },
+    {
+      "name": "encoder.layers.0.selfAttn.Wk",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 4928
+    },
+    {
+      "name": "encoder.layers.0.selfAttn.Wv",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 9024
+    },
+    {
+      "name": "encoder.layers.0.selfAttn.Wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 13120
+    },
+    {
+      "name": "encoder.layers.0.norm1.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 17216
+    },
+    {
+      "name": "encoder.layers.0.norm1.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 17280
+    },
+    {
+      "name": "encoder.layers.0.ffn.W1",
+      "shape": [
+        64,
+        128
+      ],
+      "offset": 17344
+    },
+    {
+      "name": "encoder.layers.0.ffn.b1",
+      "shape": [
+        1,
+        128
+      ],
+      "offset": 25536
+    },
+    {
+      "name": "encoder.layers.0.ffn.W2",
+      "shape": [
+        128,
+        64
+      ],
+      "offset": 25664
+    },
+    {
+      "name": "encoder.layers.0.ffn.b2",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 33856
+    },
+    {
+      "name": "encoder.layers.0.norm2.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 33920
+    },
+    {
+      "name": "encoder.layers.0.norm2.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 33984
+    },
+    {
+      "name": "encoder.layers.1.selfAttn.Wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 34048
+    },
+    {
+      "name": "encoder.layers.1.selfAttn.Wk",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 38144
+    },
+    {
+      "name": "encoder.layers.1.selfAttn.Wv",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 42240
+    },
+    {
+      "name": "encoder.layers.1.selfAttn.Wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 46336
+    },
+    {
+      "name": "encoder.layers.1.norm1.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 50432
+    },
+    {
+      "name": "encoder.layers.1.norm1.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 50496
+    },
+    {
+      "name": "encoder.layers.1.ffn.W1",
+      "shape": [
+        64,
+        128
+      ],
+      "offset": 50560
+    },
+    {
+      "name": "encoder.layers.1.ffn.b1",
+      "shape": [
+        1,
+        128
+      ],
+      "offset": 58752
+    },
+    {
+      "name": "encoder.layers.1.ffn.W2",
+      "shape": [
+        128,
+        64
+      ],
+      "offset": 58880
+    },
+    {
+      "name": "encoder.layers.1.ffn.b2",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 67072
+    },
+    {
+      "name": "encoder.layers.1.norm2.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 67136
+    },
+    {
+      "name": "encoder.layers.1.norm2.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 67200
+    },
+    {
+      "name": "decoder.layers.0.maskedSelfAttn.Wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 67264
+    },
+    {
+      "name": "decoder.layers.0.maskedSelfAttn.Wk",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 71360
+    },
+    {
+      "name": "decoder.layers.0.maskedSelfAttn.Wv",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 75456
+    },
+    {
+      "name": "decoder.layers.0.maskedSelfAttn.Wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 79552
+    },
+    {
+      "name": "decoder.layers.0.norm1.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 83648
+    },
+    {
+      "name": "decoder.layers.0.norm1.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 83712
+    },
+    {
+      "name": "decoder.layers.0.crossAttn.Wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 83776
+    },
+    {
+      "name": "decoder.layers.0.crossAttn.Wk",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 87872
+    },
+    {
+      "name": "decoder.layers.0.crossAttn.Wv",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 91968
+    },
+    {
+      "name": "decoder.layers.0.crossAttn.Wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 96064
+    },
+    {
+      "name": "decoder.layers.0.norm2.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 100160
+    },
+    {
+      "name": "decoder.layers.0.norm2.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 100224
+    },
+    {
+      "name": "decoder.layers.0.ffn.W1",
+      "shape": [
+        64,
+        128
+      ],
+      "offset": 100288
+    },
+    {
+      "name": "decoder.layers.0.ffn.b1",
+      "shape": [
+        1,
+        128
+      ],
+      "offset": 108480
+    },
+    {
+      "name": "decoder.layers.0.ffn.W2",
+      "shape": [
+        128,
+        64
+      ],
+      "offset": 108608
+    },
+    {
+      "name": "decoder.layers.0.ffn.b2",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 116800
+    },
+    {
+      "name": "decoder.layers.0.norm3.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 116864
+    },
+    {
+      "name": "decoder.layers.0.norm3.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 116928
+    },
+    {
+      "name": "decoder.layers.1.maskedSelfAttn.Wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 116992
+    },
+    {
+      "name": "decoder.layers.1.maskedSelfAttn.Wk",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 121088
+    },
+    {
+      "name": "decoder.layers.1.maskedSelfAttn.Wv",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 125184
+    },
+    {
+      "name": "decoder.layers.1.maskedSelfAttn.Wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 129280
+    },
+    {
+      "name": "decoder.layers.1.norm1.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 133376
+    },
+    {
+      "name": "decoder.layers.1.norm1.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 133440
+    },
+    {
+      "name": "decoder.layers.1.crossAttn.Wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 133504
+    },
+    {
+      "name": "decoder.layers.1.crossAttn.Wk",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 137600
+    },
+    {
+      "name": "decoder.layers.1.crossAttn.Wv",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 141696
+    },
+    {
+      "name": "decoder.layers.1.crossAttn.Wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 145792
+    },
+    {
+      "name": "decoder.layers.1.norm2.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 149888
+    },
+    {
+      "name": "decoder.layers.1.norm2.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 149952
+    },
+    {
+      "name": "decoder.layers.1.ffn.W1",
+      "shape": [
+        64,
+        128
+      ],
+      "offset": 150016
+    },
+    {
+      "name": "decoder.layers.1.ffn.b1",
+      "shape": [
+        1,
+        128
+      ],
+      "offset": 158208
+    },
+    {
+      "name": "decoder.layers.1.ffn.W2",
+      "shape": [
+        128,
+        64
+      ],
+      "offset": 158336
+    },
+    {
+      "name": "decoder.layers.1.ffn.b2",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 166528
+    },
+    {
+      "name": "decoder.layers.1.norm3.gamma",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 166592
+    },
+    {
+      "name": "decoder.layers.1.norm3.beta",
+      "shape": [
+        1,
+        64
+      ],
+      "offset": 166656
+    }
+  ],
+  "task": "reverse",
+  "alphabet": "0123456789",
+  "stepsDone": 1500,
+  "valLoss": 0.013621518627481814,
+  "exactMatch": 0.97
+}
