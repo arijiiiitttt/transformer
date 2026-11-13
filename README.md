@@ -1,7 +1,5 @@
 <h1 align="center">my transformer</h1>
-<p align="center">
- a complete encoder-decoder Transformer built from scratch in plain JavaScript: its own autograd, one folder per block of the diagram, zero dependencies.
-</p>
+
 
 <p align="center">
   <a href="#setup"><img alt="JavaScript" src="https://img.shields.io/badge/model-plain%20javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" /></a>
