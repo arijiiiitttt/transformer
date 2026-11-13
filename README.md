@@ -81,33 +81,6 @@ node scripts/generate.js 12345 9081726
 
 Each box in the diagram has its own folder.
 
-```
-transformer-js/
-├── public/transformer.png          the diagram this project follows
-├── src/
-│   ├── autograd/                   tensor.js, ops.js       (backprop engine written here)
-│   ├── embeddings/                 embedding.js            "Input / Output Embedding"
-│   ├── positional/                 sinusoidal.js           "Positional Encoding"
-│   ├── masks/                      masks.js                padding mask + causal mask
-│   ├── attention/                  scaled_dot_product.js   softmax(QKᵀ/√d)V
-│   │                               multi_head.js           "Multi-Head Attention"
-│   ├── addnorm/                    add_norm.js             "Add & Norm"
-│   ├── feedforward/                feed_forward.js         "Feed Forward"
-│   ├── encoder/                    encoder_layer.js, encoder.js     left stack, Nx
-│   ├── decoder/                    decoder_layer.js, decoder.js     right stack, Nx
-│   ├── output/                     output_head.js          "Linear" + "Softmax"
-│   ├── model/                      transformer.js          everything wired together
-│   │                               checkpoint.js           save / load
-│   ├── optim/                      adam.js                 Adam, warm-up, grad clipping
-│   ├── data/                       tokenizer.js, tasks.js
-│   ├── generate/                   decode.js               one token at a time
-│   ├── nn/                         module.js               finds parameters
-│   └── utils/                      rng.js, init.js
-├── scripts/                        train.js, generate.js, show-attention.js
-├── tests/                          ops, blocks and whole-model tests
-├── model/                          the trained demo model
-└── README.md
-```
 
 | File | What it is |
 |---|---|
